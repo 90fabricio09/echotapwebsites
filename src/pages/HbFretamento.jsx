@@ -1,13 +1,21 @@
 import { Link } from 'react-router-dom';
-import DanielFilgueiraImage from '../assets/images/danielfilgueira.jpeg';
+import HbFretamentoImage from '../assets/images/hbfretamento.png';
 
-const DanielFilgueira = () => {
+const HbFretamento = () => {
     const links = [
+        {
+            title: "Website",
+            description: "Visite nosso site oficial",
+            icon: "bi-globe",
+            path: "https://hbfretamento.com.br",
+            color: "#2563EB",
+            isExternal: true
+        },
         {
             title: "WhatsApp",
             description: "Entre em contato",
             icon: "bi-whatsapp",
-            path: "https://wa.me/5511994921448",
+            path: "https://wa.me/5511947081830",
             color: "#2563EB",
             isExternal: true
         },
@@ -15,7 +23,15 @@ const DanielFilgueira = () => {
             title: "Instagram",
             description: "Me siga no Instagram",
             icon: "bi-instagram",
-            path: "https://instagram.com/daniel_filgueira_consorcio",
+            path: "https://instagram.com/hbfretamento",
+            color: "#2563EB",
+            isExternal: true
+        },
+        {
+            title: "Avalie no Google",
+            description: "Nos avalie no Google",
+            icon: "bi-google",
+            path: "https://search.google.com/local/writereview?placeid=ChIJaRt3-J5ZzpQR6C0BVe9Rq7c",
             color: "#2563EB",
             isExternal: true
         },
@@ -26,10 +42,10 @@ const DanielFilgueira = () => {
             <div className="content-wrapper">
                 <div className="profile-section">
                     <div className="profile-image">
-                        <img src={DanielFilgueiraImage} alt="Daniel Filgueira" />
+                        <img src={HbFretamentoImage} alt="HB Fretamento" />
                     </div>
                     <div className="profile-info">
-                        <h1>Daniel Filgueira</h1>
+                        <h1>HB Fretamento</h1>
                         <p className="bio">Clique nos botões abaixo!</p>
                     </div>
                 </div>
@@ -66,4 +82,4 @@ const DanielFilgueira = () => {
     );
 };
 
-export default DanielFilgueira;
+export default HbFretamento;

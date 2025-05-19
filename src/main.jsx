@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App.jsx';
 import Home from './pages/Home.jsx';
 import DanielFilgueira from './pages/DanielFilgueira.jsx';
+import HbFretamento from './pages/HbFretamento.jsx';
 import NotFound from './pages/NotFound.jsx'
 
 import './css/home.css';
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Home /> },
       {path:"/danielfilgueira", element: <DanielFilgueira /> },
+      {path:"/hbfretamento", element: <HbFretamento /> },
       {path:"*",
         element: <NotFound />
       }
