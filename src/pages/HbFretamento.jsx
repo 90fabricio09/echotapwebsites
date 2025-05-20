@@ -75,7 +75,7 @@ const HbFretamento = () => {
                 </div>
 
                 <footer className="home-footer">
-                    <p>Desenvolvido com <i className="bi bi-heart-fill"></i> por <a href="https://astrixo.com.br" target="_blank" rel="noopener noreferrer" className="footer-link">EchoTap</a></p>
+                    <p>Desenvolvido com <i className="bi bi-heart-fill"></i> por <a href="https://echotap.com.br/" target="_blank" rel="noopener noreferrer" className="footer-link">EchoTap</a></p>
                 </footer>
             </div>
         </div>
