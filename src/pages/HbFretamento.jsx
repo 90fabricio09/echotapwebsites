@@ -32,8 +32,8 @@ const HbFretamento = () => {
             isExternal: true
         },
         {
-            title: "Google",
-            description: translations.googleDesc || "Nos avalie no Google",
+            title: translations.google,
+            description: translations.googleDesc,
             icon: "bi-google",
             path: "https://search.google.com/local/writereview?placeid=ChIJaRt3-J5ZzpQR6C0BVe9Rq7c",
             color: "#2563EB",

@@ -343,9 +343,15 @@
     background: none;
   }
 
+  .link-card:hover .link-icon {
+    transform: none;
+    box-shadow: none;
+  }
+
   .link-icon i {
     font-size: 1.5rem;
     color: #2563EB;
+    box-shadow: none;
   }
 
   .link-info h3 {

@@ -8,6 +8,14 @@ const FabricioBettarello = () => {
 
   const links = [
     {
+      title: translations.website,
+      description: translations.websiteDesc,
+      icon: "bi-globe",
+      path: "https://astrixo.com.br",
+      color: "#2563EB",
+      isExternal: true
+  },
+    {
       title: translations.whatsapp,
       description: translations.whatsappDesc,
       icon: "bi-whatsapp",
@@ -24,10 +32,18 @@ const FabricioBettarello = () => {
       isExternal: true
     },
     {
-      title: "LinkedIn",
-      description: "Conecte-se",
+      title: translations.linkedin,
+      description: translations.linkedinDesc,
       icon: "bi-linkedin",
       path: "https://linkedin.com/in/fabriciobettarello",
+      color: "#2563EB",
+      isExternal: true
+    },
+    {
+      title: translations.github,
+      description: translations.githubDesc,
+      icon: "bi-github",
+      path: "https://github.com/fabriciobettarello",
       color: "#2563EB",
       isExternal: true
     }
