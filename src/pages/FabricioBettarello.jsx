@@ -1,13 +1,13 @@
 import { Link } from 'react-router-dom';
-import EchoTap from '../assets/images/echotap.png';
+import FabricioBettarelloImage from '../assets/images/fabriciobettarello.jpeg';
 
-const Home = () => {
+const FabricioBettarello = () => {
   const links = [
     {
       title: "Website",
       description: "Visite nosso site oficial",
       icon: "bi-globe",
-      path: "https://echotap.com.br",
+      path: "https://astrixo.com.br",
       color: "#2563EB",
       isExternal: true
     },
@@ -15,7 +15,7 @@ const Home = () => {
       title: "Instagram",
       description: "Me siga no Instagram",
       icon: "bi-instagram",
-      path: "https://instagram.com/echotapoficial",
+      path: "https://instagram.com/bettarello_",
       color: "#2563EB",
       isExternal: true
     },
@@ -23,7 +23,15 @@ const Home = () => {
       title: "WhatsApp",
       description: "Entre em contato",
       icon: "bi-whatsapp",
-      path: "https://wa.me/5511994921448",
+      path: "https://wa.me/5511931501833",
+      color: "#2563EB",
+      isExternal: true
+    },
+    {
+      title: "LinkedIn",
+      description: "Conecte-se",
+      icon: "bi-linkedin",
+      path: "https://linkedin.com/in/fabriciobettarello",
       color: "#2563EB",
       isExternal: true
     }
@@ -34,10 +42,10 @@ const Home = () => {
       <div className="content-wrapper">
         <div className="profile-section">
           <div className="profile-image">
-            <img src={EchoTap} alt="Fabricio Bettarello" />
+            <img src={FabricioBettarelloImage} alt="Fabricio Bettarello" />
           </div>
           <div className="profile-info">
-            <h1>EchoTap</h1>
+            <h1>Fabricio Bettarello</h1>
             <p className="bio">Clique nos botões abaixo!</p>
           </div>
         </div>
@@ -74,4 +82,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default FabricioBettarello;

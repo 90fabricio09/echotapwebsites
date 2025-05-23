@@ -4,6 +4,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx';
 import Home from './pages/Home.jsx';
+import FabricioBettarello from './pages/FabricioBettarello.jsx';
 import DanielFilgueira from './pages/DanielFilgueira.jsx';
 import HbFretamento from './pages/HbFretamento.jsx';
 import NotFound from './pages/NotFound.jsx'
@@ -18,6 +19,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
+      {path:"/fabriciobettarello", element: <FabricioBettarello /> },
       {path:"/danielfilgueira", element: <DanielFilgueira /> },
       {path:"/hbfretamento", element: <HbFretamento /> },
       {path:"*",
