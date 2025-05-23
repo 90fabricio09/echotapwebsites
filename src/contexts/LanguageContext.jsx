@@ -60,7 +60,7 @@ export const LanguageProvider = ({ children }) => {
   const translations = {
     pt: {
       title: 'EchoTap',
-      bio: 'Soluções digitais inovadoras para seu negócio',
+      bio: 'Clique nos botões para interagir',
       website: 'Website',
       websiteDesc: 'Acesse o site',
       instagram: 'Instagram',
@@ -107,7 +107,7 @@ export const LanguageProvider = ({ children }) => {
     },
     en: {
       title: 'EchoTap',
-      bio: 'Innovative digital solutions for your business',
+      bio: 'Click the buttons to interact',
       website: 'Website',
       websiteDesc: 'Visit the website',
       instagram: 'Instagram',
@@ -154,7 +154,7 @@ export const LanguageProvider = ({ children }) => {
     },
     es: {
       title: 'EchoTap',
-      bio: 'Soluciones digitales innovadoras para tu negocio',
+      bio: 'Haz clic en los botones para interactuar',
       website: 'Sitio Web',
       websiteDesc: 'Visita el sitio',
       instagram: 'Instagram',
@@ -201,7 +201,7 @@ export const LanguageProvider = ({ children }) => {
     },
     fr: {
       title: 'EchoTap',
-      bio: 'Solutions numériques innovantes pour votre entreprise',
+      bio: 'Cliquez sur les boutons pour interagir',
       website: 'Site Web',
       websiteDesc: 'Visitez le site',
       instagram: 'Instagram',
@@ -248,7 +248,7 @@ export const LanguageProvider = ({ children }) => {
     },
     de: {
       title: 'EchoTap',
-      bio: 'Innovative digitale Lösungen für Ihr Unternehmen',
+      bio: 'Klicken Sie auf die Schaltflächen, um zu interagieren',
       website: 'Webseite',
       websiteDesc: 'Besuchen Sie die Website',
       instagram: 'Instagram',
@@ -295,7 +295,7 @@ export const LanguageProvider = ({ children }) => {
     },
     it: {
       title: 'EchoTap',
-      bio: 'Soluzioni digitali innovative per la tua azienda',
+      bio: 'Clicca sui pulsanti per interagire',
       website: 'Sito Web',
       websiteDesc: 'Visita il sito',
       instagram: 'Instagram',
@@ -342,7 +342,7 @@ export const LanguageProvider = ({ children }) => {
     },
     ja: {
       title: 'EchoTap',
-      bio: 'ビジネスのための革新的なデジタルソリューション',
+      bio: 'ボタンをクリックして操作',
       website: 'ウェブサイト',
       websiteDesc: 'サイトを訪問',
       instagram: 'Instagram',
@@ -389,7 +389,7 @@ export const LanguageProvider = ({ children }) => {
     },
     zh: {
       title: 'EchoTap',
-      bio: '为您的企业提供创新的数字解决方案',
+      bio: '点击按钮进行交互',
       website: '网站',
       websiteDesc: '访问网站',
       instagram: 'Instagram',
@@ -436,7 +436,7 @@ export const LanguageProvider = ({ children }) => {
     },
     ru: {
       title: 'EchoTap',
-      bio: 'Инновационные цифровые решения для вашего бизнеса',
+      bio: 'Нажмите на кнопки для взаимодействия',
       website: 'Веб-сайт',
       websiteDesc: 'Посетите сайт',
       instagram: 'Instagram',
@@ -483,7 +483,7 @@ export const LanguageProvider = ({ children }) => {
     },
     ar: {
       title: 'EchoTap',
-      bio: 'حلول رقمية مبتكرة لعملك',
+      bio: 'انقر على الأزرار للتفاعل',
       website: 'الموقع الإلكتروني',
       websiteDesc: 'زيارة الموقع',
       instagram: 'Instagram',
@@ -530,7 +530,7 @@ export const LanguageProvider = ({ children }) => {
     },
     hi: {
       title: 'EchoTap',
-      bio: 'आपके व्यवसाय के लिए नवीन डिजिटल समाधान',
+      bio: 'इंटरैक्ट करने के लिए बटन पर क्लिक करें',
       website: 'वेबसाइट',
       websiteDesc: 'वेबसाइट देखें',
       instagram: 'Instagram',
@@ -577,7 +577,7 @@ export const LanguageProvider = ({ children }) => {
     },
     ko: {
       title: 'EchoTap',
-      bio: '비즈니스를 위한 혁신적인 디지털 솔루션',
+      bio: '버튼을 클릭하여 상호작용',
       website: '웹사이트',
       websiteDesc: '웹사이트 방문',
       instagram: 'Instagram',
