@@ -1,29 +1,25 @@
 import { Link } from 'react-router-dom';
 import FabricioBettarelloImage from '../assets/images/fabriciobettarello.jpeg';
+import { useLanguage } from '../contexts/LanguageContext';
+import LanguageSelector from '../components/LanguageSelector';
 
 const FabricioBettarello = () => {
+  const { translations } = useLanguage();
+
   const links = [
     {
-      title: "Website",
-      description: "Visite nosso site oficial",
-      icon: "bi-globe",
-      path: "https://astrixo.com.br",
-      color: "#2563EB",
-      isExternal: true
-    },
-    {
-      title: "Instagram",
-      description: "Me siga no Instagram",
-      icon: "bi-instagram",
-      path: "https://instagram.com/bettarello_",
-      color: "#2563EB",
-      isExternal: true
-    },
-    {
-      title: "WhatsApp",
-      description: "Entre em contato",
+      title: translations.whatsapp,
+      description: translations.whatsappDesc,
       icon: "bi-whatsapp",
-      path: "https://wa.me/5511931501833",
+      path: "https://wa.me/5511994921448",
+      color: "#2563EB",
+      isExternal: true
+    },
+    {
+      title: translations.instagram,
+      description: translations.instagramDesc,
+      icon: "bi-instagram",
+      path: "https://instagram.com/fabriciobettarello",
       color: "#2563EB",
       isExternal: true
     },
@@ -40,13 +36,14 @@ const FabricioBettarello = () => {
   return (
     <div className="home-container">
       <div className="content-wrapper">
+        <LanguageSelector />
         <div className="profile-section">
           <div className="profile-image">
             <img src={FabricioBettarelloImage} alt="Fabricio Bettarello" />
           </div>
           <div className="profile-info">
             <h1>Fabricio Bettarello</h1>
-            <p className="bio">Clique nos botões abaixo!</p>
+            <p className="bio">{translations.bio}</p>
           </div>
         </div>
 
@@ -75,7 +72,7 @@ const FabricioBettarello = () => {
         </div>
 
         <footer className="home-footer">
-          <p>Desenvolvido com <i className="bi bi-heart-fill"></i> por <a href="https://echotap.com.br/" target="_blank" rel="noopener noreferrer" className="footer-link">EchoTap</a></p>
+          <p>{translations.footer} <i className="bi bi-heart-fill"></i> {translations.by} <a href="https://echotap.com.br/" target="_blank" rel="noopener noreferrer" className="footer-link">EchoTap</a></p>
         </footer>
       </div>
     </div>
