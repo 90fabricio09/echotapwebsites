@@ -19,7 +19,7 @@ const FabricioBettarello = () => {
       title: translations.whatsapp,
       description: translations.whatsappDesc,
       icon: "bi-whatsapp",
-      path: "https://wa.me/5511994921448",
+      path: "https://wa.me/5511931501833",
       color: "#2563EB",
       isExternal: true
     },
@@ -27,7 +27,7 @@ const FabricioBettarello = () => {
       title: translations.instagram,
       description: translations.instagramDesc,
       icon: "bi-instagram",
-      path: "https://instagram.com/fabriciobettarello",
+      path: "https://instagram.com/bettarello_",
       color: "#2563EB",
       isExternal: true
     },
