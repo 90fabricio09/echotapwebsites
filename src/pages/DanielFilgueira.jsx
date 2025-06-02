@@ -8,6 +8,14 @@ const DanielFilgueira = () => {
 
     const links = [
         {
+            title: translations.website,
+            description: translations.websiteDesc,
+            icon: "bi-globe",
+            path: "https://echotap.com.br",
+            color: "#2563EB",
+            isExternal: true
+        },
+        {
             title: translations.whatsapp,
             description: translations.whatsappDesc,
             icon: "bi-whatsapp",
@@ -19,7 +27,15 @@ const DanielFilgueira = () => {
             title: translations.instagram,
             description: translations.instagramDesc,
             icon: "bi-instagram",
-            path: "https://instagram.com/daniel_filgueira_consorcio",
+            path: "https://instagram.com/dani_alves_fl",
+            color: "#2563EB",
+            isExternal: true
+        },
+        {
+            title: translations.instagram,
+            description: translations.instagramDesc,
+            icon: "bi-instagram",
+            path: "https://instagram.com/echotapoficial",
             color: "#2563EB",
             isExternal: true
         },
