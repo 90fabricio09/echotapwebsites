@@ -5,7 +5,7 @@ import LanguageSelector from '../components/LanguageSelector';
 
 const FabricioBettarello = () => {
   const { translations } = useLanguage();
-  const primaryColor = "#2563EB";
+  const primaryColor = "#4F46E5";
 
   const links = [
     {
