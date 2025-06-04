@@ -5,7 +5,7 @@ import LanguageSelector from '../components/LanguageSelector';
 
 const HbFretamento = () => {
     const { translations } = useLanguage();
-    const primaryColor = "#2563EB";
+    const primaryColor = "#FCCD29";
 
     const links = [
         {
