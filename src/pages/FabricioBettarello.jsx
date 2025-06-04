@@ -5,6 +5,7 @@ import LanguageSelector from '../components/LanguageSelector';
 
 const FabricioBettarello = () => {
   const { translations } = useLanguage();
+  const primaryColor = "#2563EB";
 
   const links = [
     {
@@ -12,15 +13,15 @@ const FabricioBettarello = () => {
       description: translations.websiteDesc,
       icon: "bi-globe",
       path: "https://astrixo.com.br",
-      color: "#2563EB",
+      color: primaryColor,
       isExternal: true
-  },
+    },
     {
       title: translations.whatsapp,
       description: translations.whatsappDesc,
       icon: "bi-whatsapp",
       path: "https://wa.me/5511931501833",
-      color: "#2563EB",
+      color: primaryColor,
       isExternal: true
     },
     {
@@ -28,7 +29,7 @@ const FabricioBettarello = () => {
       description: translations.instagramDesc,
       icon: "bi-instagram",
       path: "https://instagram.com/bettarello_",
-      color: "#2563EB",
+      color: primaryColor,
       isExternal: true
     },
     {
@@ -36,7 +37,7 @@ const FabricioBettarello = () => {
       description: translations.linkedinDesc,
       icon: "bi-linkedin",
       path: "https://linkedin.com/in/fabriciobettarello",
-      color: "#2563EB",
+      color: primaryColor,
       isExternal: true
     },
     {
@@ -44,13 +45,13 @@ const FabricioBettarello = () => {
       description: translations.githubDesc,
       icon: "bi-github",
       path: "https://github.com/fabriciobettarello",
-      color: "#2563EB",
+      color: primaryColor,
       isExternal: true
     }
   ];
 
   return (
-    <div className="home-container">
+    <div className="home-container" style={{ "--primary-color": primaryColor }}>
       <div className="content-wrapper">
         <LanguageSelector />
         <div className="profile-section">
@@ -74,8 +75,8 @@ const FabricioBettarello = () => {
               style={{'--hover-color': link.color}}
             >
               <div className="link-content">
-                <div className="link-icon">
-                  <i className={`bi ${link.icon}`}></i>
+                <div className="link-icon" style={{ backgroundColor: link.color }}>
+                  <i className={`bi ${link.icon}`} style={{ color: 'white' }}></i>
                 </div>
                 <div className="link-text">
                   <h3>{link.title}</h3>

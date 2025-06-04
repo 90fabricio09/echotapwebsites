@@ -8,6 +8,7 @@ import Home from './pages/Home.jsx';
 import FabricioBettarello from './pages/FabricioBettarello.jsx';
 import DanielFilgueira from './pages/DanielFilgueira.jsx';
 import HbFretamento from './pages/HbFretamento.jsx';
+import FredsonNunes from './pages/FredsonNunes.jsx';
 import NotFound from './pages/NotFound.jsx'
 
 import './css/home.css';
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
       {path:"/fabriciobettarello", element: <FabricioBettarello /> },
       {path:"/danielfilgueira", element: <DanielFilgueira /> },
       {path:"/hbfretamento", element: <HbFretamento /> },
+      {path:"/fredsonnunes", element: <FredsonNunes /> },
       {path:"*",
         element: <NotFound />
       }

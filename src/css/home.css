@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+:root {
+  --default-color: #2563EB;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +48,7 @@
   backdrop-filter: blur(10px);
   margin: 20px;
   overflow: visible;
-  border: 2px solid #2563EB;
+  border: 2px solid var(--primary-color);
 }
 
 .profile-section {
@@ -88,7 +92,7 @@
   color: #1E293B;
   margin-bottom: 0.5rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  background: linear-gradient(135deg, var(--primary-color) 0%, color-mix(in srgb, var(--primary-color) 80%, black) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -188,7 +192,7 @@
 
 .link-card:hover .bi-arrow-right {
   transform: translateX(5px);
-  color: #2563EB;
+  color: var(--hover-color);
 }
 
 .home-footer {
@@ -200,12 +204,12 @@
 }
 
 .home-footer i {
-  color: #2563EB;
+  color: var(--default-color);
   animation: heartbeat 1.5s ease infinite;
 }
 
 .footer-link {
-  color: #2563EB;
+  color: var(--default-color);
   text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -227,7 +231,7 @@
   position: absolute;
   width: 100%;
   height: 1px;
-  background: #2563EB;
+  background: var(--default-color);
   bottom: -2px;
   left: 0;
   transform: scaleX(0);
@@ -252,9 +256,8 @@
 
 /* Responsividade */
 @media (max-width: 768px) {
-
   .content-wrapper {
-    border: none;
+    padding: 2rem;
   }
 
   .container {
@@ -263,19 +266,74 @@
 
   .home-container {
     background: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem 1rem;
   }
 
   .profile-section {
-    padding: 2rem 1rem;
+    margin-bottom: 2.5rem;
   }
 
   .profile-image {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
   }
 
   .profile-info h1 {
-    font-size: 1.75rem;
+    font-size: 2rem;
+  }
+
+  .profile-info p {
+    font-size: 1.05rem;
+  }
+
+  .links-container {
+    gap: 1.1rem;
+  }
+
+  .link-card {
+    padding: 1.3rem;
+  }
+
+  .link-icon {
+    width: 44px;
+    height: 44px;
+    background-color: transparent !important;
+  }
+
+  .link-icon i {
+    color: var(--hover-color) !important;
+    font-size: 1.4rem;
+  }
+
+  .link-info h3 {
+    font-size: 1.15rem;
+  }
+
+  .link-info p {
+    font-size: 0.9rem;
+  }
+
+  .footer {
+    margin-top: 2.5rem;
+  }
+
+  .footer p {
+    font-size: 0.85rem;
+  }
+
+  .link-card:hover .link-icon {
+    transform: none;
+    box-shadow: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-section {
+    margin-bottom: 2rem;
+  }
+
+  .profile-info h1 {
+    font-size: 1.8rem;
   }
 
   .profile-info p {
@@ -287,16 +345,18 @@
   }
 
   .link-card {
-    padding: 1rem;
+    padding: 1.2rem;
   }
 
   .link-icon {
     width: 40px;
     height: 40px;
+    background-color: transparent !important;
   }
 
   .link-icon i {
-    font-size: 1.25rem;
+    color: var(--hover-color) !important;
+    font-size: 1.3rem;
   }
 
   .link-info h3 {
@@ -304,70 +364,20 @@
   }
 
   .link-info p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .footer {
-    padding: 1.5rem 1rem;
+    margin-top: 2rem;
   }
 
   .footer p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .profile-section {
-    padding: 1.5rem 1rem;
-  }
-
-  .profile-info h1 {
-    font-size: 1.5rem;
-  }
-
-  .profile-info p {
-    font-size: 0.9rem;
-  }
-
-  .links-container {
-    gap: 0.75rem;
-  }
-
-  .link-card {
-    padding: 0.875rem;
-  }
-
-  .link-icon {
-    width: 36px;
-    height: 36px;
-    background: none;
+    font-size: 0.8rem;
   }
 
   .link-card:hover .link-icon {
     transform: none;
     box-shadow: none;
-  }
-
-  .link-icon i {
-    font-size: 1.5rem;
-    color: #2563EB;
-    box-shadow: none;
-  }
-
-  .link-info h3 {
-    font-size: 1rem;
-  }
-
-  .link-info p {
-    font-size: 0.85rem;
-  }
-
-  .footer {
-    padding: 1rem;
-  }
-
-  .footer p {
-    font-size: 0.85rem;
   }
 }
 
@@ -433,7 +443,7 @@
 .language-toggle {
   background: white;
   border: 1px solid rgba(37, 99, 235, 0.2);
-  color: #2563EB;
+  color: var(--primary-color);
   cursor: pointer;
   font-size: 0.9rem;
   padding: 0.5rem 1rem;
@@ -445,11 +455,11 @@
   min-width: 140px;
   justify-content: center;
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
-  border: 2px solid #2563EB;
+  border: 2px solid var(--primary-color);
 }
 
 .language-toggle:hover {
-  border-color: #2563EB;
+  border-color: var(--primary-color);
   transform: translateY(-1px);
   box-shadow: 0 6px 8px -1px rgba(0, 0, 0, 0.15);
 }
@@ -521,7 +531,7 @@
 
 .language-option.active {
   background: rgba(37, 99, 235, 0.1);
-  color: #2563EB;
+  color: var(--primary-color);
   font-weight: 500;
 }
 

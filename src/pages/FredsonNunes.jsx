@@ -1,43 +1,43 @@
 import { Link } from 'react-router-dom';
-import DanielFilgueiraImage from '../assets/images/danielfilgueira.jpeg';
+import FredsonNunesImage from '../assets/images/fredsonnunes.jpg';
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageSelector from '../components/LanguageSelector';
 
 const DanielFilgueira = () => {
     const { translations } = useLanguage();
-    const primaryColor = "#2563EB";
+    const primaryColor = "#7800C8";
 
     const links = [
         {
             title: translations.website,
             description: translations.websiteDesc,
             icon: "bi-globe",
-            path: "https://echotap.com.br",
-            color: primaryColor,
+            path: "https://www.multipixel.com.br",
+            color: "#7800C8",
+            isExternal: true
+        },
+        {
+            title: translations.linkedin,
+            description: translations.linkedinDesc,
+            icon: "bi-linkedin",
+            path: "https://www.linkedin.com/in/frednunesjr",
+            color: "#FCB415",
             isExternal: true
         },
         {
             title: translations.whatsapp,
             description: translations.whatsappDesc,
             icon: "bi-whatsapp",
-            path: "https://wa.me/5511994921448",
-            color: primaryColor,
+            path: "https://wa.me/5511948579247",
+            color: "#7800C8",
             isExternal: true
         },
         {
             title: translations.instagram,
             description: translations.instagramDesc,
             icon: "bi-instagram",
-            path: "https://instagram.com/dani_alves_fl",
-            color: primaryColor,
-            isExternal: true
-        },
-        {
-            title: translations.instagram,
-            description: translations.instagramDesc,
-            icon: "bi-instagram",
-            path: "https://instagram.com/echotapoficial",
-            color: primaryColor,
+            path: "https://www.instagram.com/multipixelbr",
+            color: "#FCB415",
             isExternal: true
         },
     ];
@@ -48,10 +48,10 @@ const DanielFilgueira = () => {
                 <LanguageSelector />
                 <div className="profile-section">
                     <div className="profile-image">
-                        <img src={DanielFilgueiraImage} alt="Daniel Filgueira" />
+                        <img src={FredsonNunesImage} alt="Fredson Nunes" />
                     </div>
                     <div className="profile-info">
-                        <h1>Daniel Filgueira</h1>
+                        <h1>Fredson Nunes</h1>
                         <p className="bio">{translations.bio}</p>
                     </div>
                 </div>
