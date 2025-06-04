@@ -51,7 +51,7 @@ const DanielFilgueira = () => {
                         <img src={FredsonNunesImage} alt="Fredson Nunes" />
                     </div>
                     <div className="profile-info">
-                        <h1>Fredson Nunes</h1>
+                        <h1>Fred Nunes</h1>
                         <p className="bio">{translations.bio}</p>
                     </div>
                 </div>
