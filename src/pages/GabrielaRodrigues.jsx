@@ -5,14 +5,14 @@ import LanguageSelector from '../components/LanguageSelector';
 
 const GabrielaRodrigues = () => {
   const { translations } = useLanguage();
-  const primaryColor = "#4F46E5";
+  const primaryColor = "#EE82EE";
 
   const links = [
     {
       title: translations.whatsapp,
       description: translations.whatsappDesc,
       icon: "bi-whatsapp",
-      path: "https://wa.me/5511931501833",
+      path: "https://wa.me/5511987228766",
       color: primaryColor,
       isExternal: true
     },
@@ -20,7 +20,7 @@ const GabrielaRodrigues = () => {
       title: translations.instagram,
       description: translations.instagramDesc,
       icon: "bi-instagram",
-      path: "https://instagram.com/bettarello_",
+      path: "https://instagram.com/gabrielarodrigues.oficial",
       color: primaryColor,
       isExternal: true
     },
