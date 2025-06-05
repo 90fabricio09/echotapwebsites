@@ -3,7 +3,7 @@ import FredsonNunesImage from '../assets/images/fredsonnunes.jpg';
 import { useLanguage } from '../contexts/LanguageContext';
 import LanguageSelector from '../components/LanguageSelector';
 
-const DanielFilgueira = () => {
+const FredsonNunes = () => {
     const { translations } = useLanguage();
     const primaryColor = "#7800C8";
 
@@ -88,4 +88,4 @@ const DanielFilgueira = () => {
     );
 };
 
-export default DanielFilgueira;
+export default FredsonNunes;
