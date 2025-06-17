@@ -14,7 +14,7 @@ const NotFound = () => {
         </div>
         <h1>Página não encontrada</h1>
         <p>Ops! Parece que você se perdeu. Vamos voltar para a página inicial?</p>
-        <a href="https://echotap.com.br/" className="home-button">
+        <a href="/" className="home-button">
           <i className="bi bi-house-fill"></i>
           Voltar para Home
         </a>
